@@ -1,7 +1,7 @@
 * {
   margin:0;
   padding:0;
-  
+  font-family: 'Montserrat', sans-serif;
    
   
 }
@@ -9,11 +9,12 @@
 .body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   line-height: 1.5;
   display:flex;
   background-color: black;
-  flex-wrap: wrap;
+  
   
 }
 
@@ -88,9 +89,31 @@ background-color:slategray;
   flex-wrap: wrap;
   margin: 0%;
   padding:0%;
+background-image: url(../images/02-hero-bg.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size:100%;
+background-attachment: fixed;
+min-height: 250px;
+position:relative;
+}
+.hero-banner .container{
+  position:relative;
+  width: 100%;
+  max-width: 1240px;
+  height: 100%;
+  min-height: 250px;
+}
+.hero-title {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  background-color: slategray;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 42px;
 
 }
-
 nav { 
   display:flex;
   flex-wrap:wrap;
@@ -118,23 +141,35 @@ nav a:hover {
   padding:1rem;
 
 }
-
+.page-section {
+  display:flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding:1rem;
+  margin:1rem 0;
+}
 .page-section h3  {
-  display: flex;
-  justify-content: center;
-  font-size: 32px;
-  background-color: black;
-  color:white;
+  flex: 0 0 15%;
+  text-align: right;
+  padding-right: 1rem;
+  border-right: 3px solid black;
+  font-size:32px;
+  color:rgb(9, 9, 9);
+  line-height: 1.25;
+}
+.page-section div {
+  flex: 0 0 80%;
 }
   p {
     background-color: black;
     color:white;
-  justify-content:right;
+  text-align: left;
+  padding:0 25px;
   font-size: larger;
  
   }
 
- 
+  
 .page-section h4  {
   display:flex;
   color:white;
@@ -150,9 +185,34 @@ nav a:hover {
  
 }
 
-
+main {
+  width:100%;
+  margin:0 auto;
+  padding: 0  4rem;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
  
+#about div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  max-width: 1200px;
+  font-size: 24px;
+}
+#about img {
+  height:100%;
+  width:auto;
+  display:block;
+  padding:0;
+  background-color:blueviolet;
+  margin-right:25px;
 
+
+}
 .page-section h5  {
   display:flex;
   justify-content: center;
@@ -162,14 +222,14 @@ nav a:hover {
 }
 
 .contact p {
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  padding: 10px;
+  flex: 0 0 15%;
+  text-align: center;
+  padding-right: 0rem;
+  border-right: 3px solid black;
+  font-size:32px;
+  color:rgb(216, 203, 203);
+  line-height: 1.25;
   }
 
-  .contact button {
-    display:flex;
-  }
 
 
